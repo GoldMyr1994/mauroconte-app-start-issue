@@ -8,6 +8,7 @@ import { darkOnLightSplash, lightOnDarkSplash } from './data.splash.json';
 const config: ExpoConfig = {
   name: 'mauroconte-app-start-issue',
   slug: 'mauroconte-app-start-issue',
+  scheme: 'mauroconte-app-start-issue',
   version: '1.0.0',
   orientation: 'portrait',
   icon: './assets/icon.png',

@@ -4,7 +4,7 @@ export function App() {
   return (
     <View>
       <Text>Hello World!</Text>
-      <Text>Index!</Text>
+      <Text>Home!</Text>
     </View>
   );
 }
