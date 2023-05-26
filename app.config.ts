@@ -16,6 +16,7 @@ const config: ExpoConfig = {
   splash: lightOnDarkSplash as Splash,
   assetBundlePatterns: ['**/*'],
   ios: {
+    bundleIdentifier: 'com.mauroconte.mauroconteappstartissue',
     supportsTablet: true,
     splash: {
       ...(lightOnDarkSplash as Splash),
@@ -23,6 +24,7 @@ const config: ExpoConfig = {
     },
   },
   android: {
+    package: 'com.mauroconte.mauroconteappstartissue',
     adaptiveIcon: {
       foregroundImage: './assets/adaptive-icon.png',
       backgroundColor: '#ffffff',
