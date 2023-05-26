@@ -1,4 +1,3 @@
-import { Splash } from '@expo/config-types';
 import { ExpoConfig } from 'expo/config';
 
 import { darkOnLightSplash, lightOnDarkSplash } from './data.splash.json';
@@ -13,14 +12,14 @@ const config: ExpoConfig = {
   orientation: 'portrait',
   icon: './assets/icon.png',
   userInterfaceStyle: 'automatic',
-  splash: lightOnDarkSplash as Splash,
+  splash: lightOnDarkSplash as ExpoConfig['splash'],
   assetBundlePatterns: ['**/*'],
   ios: {
     bundleIdentifier: 'com.mauroconte.mauroconteappstartissue',
     supportsTablet: true,
     splash: {
-      ...(lightOnDarkSplash as Splash),
-      dark: darkOnLightSplash as Splash,
+      ...(lightOnDarkSplash as ExpoConfig['ios']['splash']),
+      dark: darkOnLightSplash as ExpoConfig['ios']['splash']['dark'],
     },
   },
   android: {
@@ -30,8 +29,8 @@ const config: ExpoConfig = {
       backgroundColor: '#ffffff',
     },
     splash: {
-      ...(lightOnDarkSplash as Splash),
-      dark: darkOnLightSplash as Splash,
+      ...(lightOnDarkSplash as ExpoConfig['android']['splash']),
+      dark: darkOnLightSplash as ExpoConfig['android']['splash']['dark'],
     },
   },
   web: {
