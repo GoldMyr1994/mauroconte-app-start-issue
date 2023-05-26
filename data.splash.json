@@ -1,0 +1,12 @@
+{
+    "darkOnLightSplash": {
+        "background": "#ffffff",
+        "image": "./assets/splash-dark.png",
+        "resizeMode": "contain"
+    },
+    "lightOnDarkSplash": {
+        "background": "#000000",
+        "image": "./assets/splash-light.png",
+        "resizeMode": "contain"
+    }
+}
